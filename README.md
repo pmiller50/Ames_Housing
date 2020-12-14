@@ -57,9 +57,9 @@ GrnHill	Green Hills
 Landmrk	Landmark
 MeadowV	Meadow Village
 Mitchel	Mitchell - south
-Names	 North Ames
+Names	North Ames
 NoRidge	Northridge
-NPkVill		Northpark Villa
+NPkVill	Northpark Villa
 NridgHt	Northridge Heights
 NWAmes	Northwest Ames
 SawyerW	Sawyer West
@@ -70,28 +70,29 @@ Veenker	Veenker
 ```
 
 Neighborhood classification was performed manually, using a best guess from:
-*Google Maps (maps.google.com)
-*www.realtor.com
-*https://www.addressreport.com
-*https://www.movoto.com
-*https://www.trulia.com
+
+* Google Maps (maps.google.com)
+* www.realtor.com
+* https://www.addressreport.com
+* https://www.movoto.com
+* https://www.trulia.com
 
 
-Neighborhoods were drawn to approximate areas seen here:
+Neighborhoods were drawn to approximate areas seen here, with the Iowa State campus in the middle:
 ![Ames Neighborhoods](/code/images/ISU_Hoods.png)
 
 
 ### Modeling
 A small feature set was included along with all neighborhood data, in order to capture a wider range of inputs.
 These were chosen somewhat arbitrarily:
-*Overall Qual
-*Year Built
-*1st Flr SF
-*2nd Flr SF
-*Garage Cars
-*bathrooms (a new feature created to combine four separate bathroom items)
-*Lot Shape
-*near_ISU (a new categorical feature showing whether a house is in one of the six neighborhoods
+* Overall Qual
+* Year Built
+* 1st Flr SF
+* 2nd Flr SF
+* Garage Cars
+* bathrooms (a new feature created to combine four separate bathroom items)
+* Lot Shape
+* near_ISU (a new categorical feature showing whether a house is in one of the six neighborhoods
 close to the Iowa State campus)
 
 Models performed:
@@ -105,12 +106,12 @@ The near_ISU feature had a positive correlation on the predicted home prices in 
 to be $3,122.  In other words, we expect to see an $3,122 rise in price for all homes in the six
 surrounding neighborhoods, holding all other items constant.
 
-![Model results](/images/near_ISU_result.png)
+![Model results](/code/images/near_ISU_result.png)
 
 To determine if this is above a 5% threshold, we calculate the mean price of all homes in the training set.
 
-The average price of all houses in the data set is: $180,995.11 
-5 percent of the average is $9,049.76
+The average price of all houses in the data set is: $180,995.11.<br>
+5 percent of the average is $9,049.76.
 
 Since $3,122 is less than 5%, we reject the null hypothesis **H<sub>0</sub>**.
 
@@ -120,7 +121,7 @@ the neighborhoods.
 For example, Crawford had the highest impact, being over $3600, while the worst performing was the 
 South and West of Iowa State, with -$239.
 
-![Neighborhoods](images/Hood_bar_chart.png)
+![Neighborhoods](code/images/Hood_bar_chart.png)
 
 
 
