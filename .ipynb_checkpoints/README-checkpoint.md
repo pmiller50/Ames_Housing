@@ -17,16 +17,16 @@ Would a new faculty member moving to the area, or any new Ames resident, expect 
 
 Let's set our null hypothesis to:
 
-Null Hypothesis H<sub>0</sub>:
+Null Hypothesis **H<sub>0</sub>**:
 Properties located in the neighborhoods have a 5% relative sales price.
 
 
-Althernative Hypothesis $H_A$: Prices in the six neighborhoods closest to Iowa State do not have a 5% higher price premium.
+Althernative Hypothesis **H<sub>A</sub>**: Prices in the six neighborhoods closest to Iowa State do not have a 5% higher price premium.
 
 
 
 
-approximately 66,000, which includes
+
 
 ## Submission
 
