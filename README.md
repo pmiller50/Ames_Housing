@@ -36,7 +36,8 @@ In order to accurately predict home values near or far from Iowa State, we need 
 
 Neighborhoods will be separated into two groups:
 **Near Iowa State** 
-```BrkSide	Brookside
+```
+BrkSide	Brookside
 Crawfor	Crawford
 Edwards	
 IDOTRR	Iowa DOT and Rail Road

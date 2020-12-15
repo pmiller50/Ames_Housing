@@ -35,8 +35,9 @@ It's data dictionary is found here:
 In order to accurately predict home values near or far from Iowa State, we need to categorize the 28 neighborhoods found in the data.
 
 Neighborhoods will be separated into two groups:
-**Near Iowa State**
-```BrkSide	Brookside
+**Near Iowa State** 
+```
+BrkSide	Brookside
 Crawfor	Crawford
 Edwards	
 IDOTRR	Iowa DOT and Rail Road
