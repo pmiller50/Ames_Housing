@@ -22,7 +22,7 @@ Properties located in the neighborhoods have a 5% relative sales price.
 
 
 Althernative Hypothesis **H<sub>A</sub>**:<br>
-Prices in the six neighborhoods closest to Iowa State do not have a 5% higher price premium.
+Prices in the seven neighborhoods closest to Iowa State do not have a 5% higher price premium.
 
 
 ## Data
@@ -36,11 +36,11 @@ In order to accurately predict home values near or far from Iowa State, we need 
 
 Neighborhoods will be separated into two groups:
 **Near Iowa State**
-```BrkSide	Brookside just east
-Crawfor	Crawford - just south
-Edwards	Edwards - close but one block west
-IDOTRR	Iowa DOT and Rail Road. pretty close, but maybe a few streets east
-OldTown	Old Town slightly east
+```BrkSide	Brookside
+Crawfor	Crawford
+Edwards	
+IDOTRR	Iowa DOT and Rail Road
+OldTown	Old Town
 SWISU	South & West of Iowa State University
 Sawyer	Sawyer
 ```
@@ -103,7 +103,7 @@ Models performed:
 ### Conclusions
 
 The near_ISU feature had a positive correlation on the predicted home prices in the Ames, IA dataset, shown here 
-to be $3,122.  In other words, we expect to see an $3,122 rise in price for all homes in the six
+to be $3,122.  In other words, we expect to see an $3,122 rise in price for all homes in the seven
 surrounding neighborhoods, holding all other items constant.
 
 ![Model results](/code/images/near_ISU_result.png)
@@ -115,7 +115,7 @@ The average price of all houses in the data set is: $180,995.11.<br>
 
 Since $3,122 is less than 5%, we reject the null hypothesis **H<sub>0</sub>**.
 
-The six close neighborhoods each had their own coefficent value, which showed different behavior within
+The seven close neighborhoods each had their own coefficent value, which showed different behavior within
 the neighborhoods.
 
 For example, Crawford had the highest impact, being over $3600, while the worst performing was the 
